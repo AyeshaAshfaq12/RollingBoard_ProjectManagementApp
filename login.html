@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Journal App</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" alt="logo">
+            <a href="index.html">RollingBoard</a>
+        </div>
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+                <div class="nav__perfil">
+                    <img src="images/logo.png" alt="logo">
+                    <a href="index.html" class="nav__name">RollingBoard</a>
+                </div>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link active">About</a></li>
+                        <li class="nav__item has-submenu"><a href="" class="nav__link">English <i
+                                    class="ri-arrow-down-s-line"></i></a>
+                            <ul class="submenu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Project</a></li>
+                                <li><a href="board.html">Boards</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__btn">
+                    <a href="login.html" class="btn">Login</a>
+                    <a href="signup.html" class="btn sign-btn">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================================================================================= -->
+
+    <div class="login-signup">
+        <div class="text">
+            <p class="tag"><i class="ri-checkbox-circle-line"></i>Project Management App</p>
+            <p class="title">Everything you need in one place</p>
+            <p class="description">Manage your boards using Drag-n-Drop, create adittional boards and tasks.
+            </p>
+        </div>
+        <form>
+            <i class="ri-close-line close"></i>
+            <p class="title">Log in to your account</p>
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login" placeholder="Login">
+            <label for="name">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <p class="account">Already have an account? <a href="signup.html">Sign up</a></p>
+            <div class="btn">
+                <a href="">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- ================================================================================= -->
+
+    <footer>
+        <div class="icons">
+            <div class="rs"><img src="images/rs.png"></div>
+            <div class="social">
+                <p>GeoBo</p>
+                <p>Mrdoker1</p>
+                <p>makrakvladislav</p>
+            </div>
+        </div>
+        <p>© 2022. Ayesha Ashfaq</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

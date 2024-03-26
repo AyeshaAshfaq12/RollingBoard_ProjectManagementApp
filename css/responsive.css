@@ -1,0 +1,282 @@
+/*   ======================================================================   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   |                              DEVELOPER                             |   */
+/*   |                            AYESHA ASHFAQ                           |   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   ======================================================================   */
+
+
+
+/* ===================== Responsiveness ====================== */
+
+
+/* ================= (Max-width: 1150px) ===================== */
+
+@media screen and (max-width: 1150px) {
+
+    .hero-section .heading {
+        width: 60%;
+    }
+
+    .hero-section .description {
+        width: 50%;
+    }
+
+    .card-grid {
+        width: 90%;
+        gap: 1rem 2rem;
+    }
+
+    .board .card-grid {
+        width: 92%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .login-signup {
+        padding: 6rem 2rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 3rem;
+    }
+
+    .feature {
+        width: 100%;
+        padding: 3rem 4rem;
+        flex-direction: column;
+    }
+
+    .f2 {
+        flex-direction: column-reverse;
+    }
+
+    .feature .text {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .feature .img {
+        width: 90%;
+    }
+
+    .project {
+        padding: 4rem 2rem;
+    }
+
+    .project .module {
+        width: 70%;
+    }
+
+    .board .card-grid {
+        width: 88%;
+        gap: 4rem 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .board .text input {
+        width: 15rem;
+    }
+
+    .login-signup .close {
+        right: 11%;
+    }
+
+    .login-signup {
+        padding: 6rem 3rem;
+    }
+
+    .login-signup form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero-section .heading {
+        width: 80%;
+    }
+
+    .hero-section .description {
+        width: 70%;
+    }
+
+    .card-grid {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem 0;
+    }
+
+    .card-grid .card {
+        padding: 4rem 2rem;
+    }
+
+    .feature {
+        padding: 3rem 2rem;
+    }
+
+    .project .module {
+        width: 90%;
+    }
+
+    .board .card-grid {
+        width: 75%;
+        gap: 3rem 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .board .text input {
+        width: 12rem;
+    }
+
+    .login-signup {
+        flex-direction: column;
+    }
+
+    .login-signup .text {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .login-signup .close {
+        right: 17%;
+    }
+    .login-signup form {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================== */
+
+@media screen and (max-width: 768px) {
+    .nav {
+        background-color: var(--primary-color);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        padding: 1.5rem 0;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .nav__link {
+        color: #fff;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.25rem;
+    }
+
+    .nav__item {
+        padding: 1.2rem 0 !important;
+    }
+
+    .nav__item .submenu {
+        top: 61%;
+        left: 4%;
+        background-color: #000;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        height: 4rem;
+    }
+
+    .header__logo,
+    .header__toggle {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__content {
+        grid-template-columns: repeat(3, -webkit-max-content);
+        grid-template-columns: repeat(3, max-content);
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        -webkit-column-gap: 1rem;
+        column-gap: 1rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .nav__close,
+    .nav__profesion {
+        display: none;
+    }
+
+    .nav__perfil {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .nav__perfil img {
+        width: 19%;
+        width: 16%;
+        margin-right: 0.5rem;
+    }
+
+    .nav__img {
+        width: 32px;
+        height: 32px;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .nav__img img {
+        width: 30px;
+    }
+
+    .nav__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .nav__item {
+        margin: 0 0.25rem;
+    }
+
+    .nav__link {
+        color: var(--secondary-color);
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
