@@ -34,7 +34,7 @@
 ---
 
 ## Preview
-![RollingBoard Preview](https://via.placeholder.com/1000x500?text=RollingBoard+Preview)
+![RollingBoard Preview](Preview.png)
 
 ## Contact
 For queries or collaborations, reach out:
